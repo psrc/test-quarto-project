@@ -2,6 +2,4 @@ project:
   title: "test-quarto-project"
 
 editor: visual
-execute:
-  freeze: auto
 
