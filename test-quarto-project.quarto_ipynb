@@ -1,0 +1,55 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Github Actions with Quarto Project\"\n",
+        "format:\n",
+        "  html:\n",
+        "    css: styles.css\n",
+        "---\n",
+        "\n",
+        "```{html}\n",
+        "\n",
+        "<style>\n",
+        "@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');\n",
+        "</style>\n",
+        "  \n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "## Quarto Set-up\n",
+        "\n",
+        "Create a new Quarto project by clicking on `File > New Project`.\n",
+        "\n",
+        "A Quarto project will include a `.qmd` file as well as a `_quarto.yml`.\n",
+        "\n",
+        "Install the `renv` package if it hasn't been installed yet. This package creates a reproducible environment for your R projects and will be used by Github Actions.\n",
+        "\n",
+        "Run `renv::init()` at the root of your project directory. It will create a `renv.lock` file that takes a snapshot of all the dependencies in your project.\n",
+        "\n",
+        "Create `.github/workflows` directory.\n",
+        "\n",
+        "## Create new empty Github repository\n",
+        "\n",
+        "Sync it with your local directory\n",
+        "\n",
+        "Follow remainder of instructions here: <https://quarto.org/docs/publishing/github-pages.html#github-action>"
+      ],
+      "id": "1c203d1b"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

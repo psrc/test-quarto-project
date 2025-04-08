@@ -1,14 +1,17 @@
 ---
 title: "Github Actions with Quarto Project"
+format:
+  html:
+    css: styles.css
 ---
 
 ## Quarto Set-up
 
-Create a new Quarto project by clicking on File > New Project.
+Create a new Quarto project by clicking on `File > New Project`.
 
 A Quarto project will include a `.qmd` file as well as a `_quarto.yml`.
 
-Install the `renv` package if it hasn't been installed yet. This package creates a reproducible environment for your R projects.
+Install the `renv` package if it hasn't been installed yet. This package creates a reproducible environment for your R projects and will be used by Github Actions.
 
 Run `renv::init()` at the root of your project directory. It will create a `renv.lock` file that takes a snapshot of all the dependencies in your project.
 
@@ -18,5 +21,4 @@ Create `.github/workflows` directory.
 
 Sync it with your local directory
 
-Follow remainder of instructions here: https://quarto.org/docs/publishing/github-pages.html#github-action
-
+Follow remainder of instructions here: <https://quarto.org/docs/publishing/github-pages.html#github-action>
