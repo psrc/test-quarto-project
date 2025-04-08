@@ -35,6 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="test-quarto-project_files/libs/bootstrap/bootstrap-feb7be27843f6a580260d43995a4e15a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="fullcontent">
@@ -64,16 +65,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="quarto-set-up" class="level2">
 <h2 class="anchored" data-anchor-id="quarto-set-up">Quarto Set-up</h2>
-<p>Create a new Quarto project by clicking on File &gt; New Project.</p>
+<p>Create a new Quarto project by clicking on <code>File &gt; New Project</code>.</p>
 <p>A Quarto project will include a <code>.qmd</code> file as well as a <code>_quarto.yml</code>.</p>
-<p>Install the <code>renv</code> package if it hasn’t been installed yet. This package creates a reproducible environment for your R projects.</p>
+<p>Install the <code>renv</code> package if it hasn’t been installed yet. This package creates a reproducible environment for your R projects and will be used by Github Actions.</p>
 <p>Run <code>renv::init()</code> at the root of your project directory. It will create a <code>renv.lock</code> file that takes a snapshot of all the dependencies in your project.</p>
 <p>Create <code>.github/workflows</code> directory.</p>
 </section>
 <section id="create-new-empty-github-repository" class="level2">
 <h2 class="anchored" data-anchor-id="create-new-empty-github-repository">Create new empty Github repository</h2>
 <p>Sync it with your local directory</p>
-<p>Follow remainder of instructions here: https://quarto.org/docs/publishing/github-pages.html#github-action</p>
+<p>Follow remainder of instructions here: <a href="https://quarto.org/docs/publishing/github-pages.html#github-action" class="uri">https://quarto.org/docs/publishing/github-pages.html#github-action</a></p>
 </section>
 
 </main>
