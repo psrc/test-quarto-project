@@ -1,14 +1,22 @@
 ---
-title: "test-quarto-project"
+title: "Github Actions with Quarto Project"
 ---
 
-## Test Test Quarto
+## Quarto Set-up
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Create a new Quarto project by clicking on File > New Project.
 
-```{r}
+A Quarto project will include a `.qmd` file as well as a `_quarto.yml`.
 
-1 + 1
-```
+Install the `renv` package if it hasn't been installed yet. This package creates a reproducible environment for your R projects.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Run `renv::init()` at the root of your project directory. It will create a `renv.lock` file that takes a snapshot of all the dependencies in your project.
+
+Create `.github/workflows` directory.
+
+## Create new empty Github repository
+
+Sync it with your local directory
+
+Follow remainder of instructions here: https://quarto.org/docs/publishing/github-pages.html#github-action
+
